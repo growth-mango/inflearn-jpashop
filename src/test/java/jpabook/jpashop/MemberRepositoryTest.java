@@ -16,7 +16,7 @@ class MemberRepositoryTest {
 
     @Test
     @Transactional // test 코드에 @Transactionl이 있으면 테스트 후 데이터 날림
-    @Rollback(value = false) // 그래서 rollback false 옵션 주기
+    @Rollback(value = false)// 그래서 rollback false 옵션 주기
     public void testMember() {
         // given
         Member member = new Member();
