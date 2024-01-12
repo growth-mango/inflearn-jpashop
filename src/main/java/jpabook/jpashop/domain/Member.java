@@ -21,6 +21,6 @@ public class Member {
     @Embedded
     private Adress adress;
 
-    @OneToMany(mappedBy = "member")
+    @OneToMany(mappedBy = "member") // 읽기전용
     private List<Order> orders = new ArrayList<>();
 }
